@@ -1,0 +1,90 @@
+.admin-mycase-management .table-container {
+  max-height: 600px; /* Increase the max-height of the table container */
+  overflow: auto; /* Enable both vertical and horizontal scrolling */
+  margin-top: 10px; /* Adjust the margin-top to create space for the table */
+}
+
+.admin-mycase-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-mycase-management th, .admin-case-management td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-mycase-management th {
+  background-color: #436480;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.admin-mycase-management tbody {
+  max-height: 500px; /* Adjust the max-height of the tbody */
+  overflow-y: auto; /* Enable vertical scrolling for tbody */
+  overflow-x: auto; /* Enable horizontal scrolling for tbody */
+}
+
+.admin-mycase-management tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-mycase-management td button {
+  background-color: #7890a0;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.admin-mycase-management td button:hover {
+  background-color: #774e4e;
+}
+
+/* Increase the width of the Actions header */
+.admin-mycase-actions-header {
+  width: 300px; /* Adjust the width as needed */
+}
+
+/* Increase the width of the Actions cells */
+.admin-mycase-actions-cell {
+  width: 180px; /* Adjust the width as needed */
+}
+
+/* Additional styling for the buttons inside the Actions cell (optional) */
+.admin-mycase-actions-cell button {
+  margin-right: 2px; /* Add spacing between buttons */
+}
+
+/* Main content area */
+.admin-mycase-content {
+  margin-left: 275px;
+  margin-top: 80px; /* Adjust the margin-top */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide the overflow to prevent double scrollbars */
+}
+
+/* Find or add styles for Back and Create Case buttons */
+.admin-mycase-management button.create-back-button,
+.admin-mycase-management button.create-case-button {
+  background-color: #2a678f; /* Change this color to your desired color */
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.admin-mycase-management button.create-back-button:hover,
+.admin-mycase-management button.create-case-button:hover {
+  background-color: #861b48; /* Change this color to your desired hover color */
+}

@@ -1,0 +1,50 @@
+.client-count-boxes {
+  display: flex;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.client-count-box {
+  background: #3498db;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #575252;
+  margin-bottom: 20px;
+  width: calc(100% - 40px); /* Adjusted width */
+}
+
+.client-count-box-image {
+  max-width: 60px;
+  margin-right: 20px;
+}
+
+.client-count-box-content {
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Display label and value vertically */
+  gap: 8px; /* Adjust the gap between label and value */
+}
+
+.client-count-box-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px; /* Adjust the bottom margin for spacing */
+}
+
+.client-count-box-value {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 4px; /* Adjust the top margin for spacing */
+}
+
+.client-count-box:first-child {
+  background: #bddff7; /* Blue background color for Total Client */
+}
+
+.client-count-box img {
+  max-width: 50px; /* Set the maximum width for the logo */
+  margin-right: 10px; /* Adjust the right margin for spacing */
+}

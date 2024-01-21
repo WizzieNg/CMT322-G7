@@ -1,0 +1,103 @@
+.client-case-management .table-container {
+  max-height: 600px; /* Increase the max-height of the table container */
+  overflow: auto; /* Enable both vertical and horizontal scrolling */
+  margin-top: 10px; /* Adjust the margin-top to create space for the table */
+}
+
+.main-top-nav-case {
+  width: 988px;
+  background-color: #97a2ad;
+}
+
+.client-case-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.client-case-management th, .admin-case-management td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.client-case-management th {
+  background-color: #436480;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.client-case-management tbody {
+  max-height: 500px; /* Adjust the max-height of the tbody */
+  overflow-y: auto; /* Enable vertical scrolling for tbody */
+  overflow-x: auto; /* Enable horizontal scrolling for tbody */
+}
+
+.client-case-management tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.client-case-management td button {
+  background-color: #7890a0;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.client-case-management td button:hover {
+  background-color: #774e4e;
+}
+
+/* Increase the width of the Actions header */
+.client-case-actions-header {
+  width: 150px; /* Adjust the width as needed */
+}
+
+/* Increase the width of the Actions cells */
+.client-case-actions-cell {
+  width: 150px; /* Adjust the width as needed */
+}
+
+/* Additional styling for the buttons inside the Actions cell (optional) */
+.client-case-actions-cell button {
+  margin-right: 5px; /* Add spacing between buttons */
+}
+
+/* Main content area */
+.client-case-content {
+  margin-left: 275px;
+  margin-top: 80px; /* Adjust the margin-top */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide the overflow to prevent double scrollbars */
+  opacity: 85%;
+}
+  
+/* Find or add styles for Back and Create Case buttons */
+.client-case-management button.create-back-button
+  {
+  background-color: #2a678f; /* Change this color to your desired color */
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 3px;
+
+  margin-top: 50px;
+  margin-left: 320px;
+  width: 70px;
+}
+
+.client-case-management button.create-back-button:hover
+{
+  background-color: #861b48; /* Change this color to your desired hover color */
+}
+
+.client-case-management-header {
+  display: flex;
+}

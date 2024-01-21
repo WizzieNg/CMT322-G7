@@ -1,0 +1,39 @@
+.container {
+    background-color: #e2e2e2;
+    max-width: 600px;
+    margin-top: 40px;
+    margin-left: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    opacity: 85%;
+  }
+
+  
+  .view-event-title {
+    color: #333;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .back-button {
+    background-color: #7890a0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition */
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for elevation */
+  }
+  
+  .back-button:hover {
+    background-color: #774e4e;
+    transform: scale(1.05); /* Scale up on hover */
+  }

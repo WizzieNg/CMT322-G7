@@ -1,0 +1,94 @@
+/* Main content area */
+.admin-case-content {
+  margin-left: 275px;
+  margin-top: 80px; /* Adjust the margin-top */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide the overflow to prevent double scrollbars */
+}
+
+.admin-case-management {
+  margin-top: 250px;
+}
+
+.admin-case-management .table-container {
+  max-height: 600px; /* Increase the max-height of the table container */
+  overflow: auto; /* Enable both vertical and horizontal scrolling */
+  margin-top: 10px; /* Adjust the margin-top to create space for the table */
+}
+
+.admin-case-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-case-management th, .admin-case-management td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-case-management th {
+  background-color: #436480;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.admin-case-management tbody {
+  max-height: 500px; /* Adjust the max-height of the tbody */
+  overflow-y: auto; /* Enable vertical scrolling for tbody */
+  overflow-x: auto; /* Enable horizontal scrolling for tbody */
+}
+
+.admin-case-management tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-case-management td button {
+  background-color: #7890a0;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.admin-case-management td button:hover {
+  background-color: #774e4e;
+}
+
+/* Increase the width of the Actions header */
+.admin-case-actions-header {
+  width: 300px; /* Adjust the width as needed */
+}
+
+/* Increase the width of the Actions cells */
+.admin-case-actions-cell {
+  width: 180px; /* Adjust the width as needed */
+}
+
+/* Additional styling for the buttons inside the Actions cell (optional) */
+.admin-case-actions-cell button {
+  margin-right: 2px; /* Add spacing between buttons */
+}
+
+/* Find or add styles for Back and Create Case buttons */
+.admin-case-management button.create-back-button,
+.admin-case-management button.create-case-button {
+  background-color: #2a678f; /* Change this color to your desired color */
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.admin-case-management button.create-back-button:hover,
+.admin-case-management button.create-case-button:hover {
+  background-color: #861b48; /* Change this color to your desired hover color */
+}

@@ -1,0 +1,30 @@
+.notification-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.notification-text {
+  margin-right: 8px;
+}
+
+.notification-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notification-read {
+  background: white;
+}
+
+.notification-unread {
+  background: #f0f0f0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.notification-icon {
+  font-size: 38px;
+  color: darkblue;
+}

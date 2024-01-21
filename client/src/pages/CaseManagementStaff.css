@@ -1,0 +1,90 @@
+.staff-case-management .table-container {
+  max-height: 600px;
+  overflow: auto;
+  margin-top: 60px; 
+}
+
+.staff-case-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.staff-case-management th, .staff-case-management td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.staff-case-management th {
+  background-color: #436480;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.staff-case-management tbody {
+  max-height: 500px; /* Adjust the max-height of the tbody */
+  overflow-y: auto; /* Enable vertical scrolling for tbody */
+  overflow-x: auto; /* Enable horizontal scrolling for tbody */
+}
+
+.staff-case-management tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.staff-case-management td button {
+  background-color: #7890a0;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.staff-case-management td button:hover {
+  background-color: #774e4e;
+}
+
+/* Increase the width of the Actions header */
+.staff-case-actions-header {
+  width:300px; /* Adjust the width as needed */
+}
+
+/* Increase the width of the Actions cells */
+.staff-case-actions-cell {
+  width: 180px; /* Adjust the width as needed */
+}
+
+/* Additional styling for the buttons inside the Actions cell (optional) */
+.staff-case-actions-cell button {
+  margin-right: 2px; /* Add spacing between buttons */
+}
+
+/* Main content area */
+.staff-case-content {
+  margin-left: 275px;
+  margin-top: 80px; /* Adjust the margin-top */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Hide the overflow to prevent double scrollbars */
+}
+
+/* Find or add styles for Back and Create Case buttons */
+.staff-case-management button.create-back-button,
+.staff-case-management button.create-case-button {
+  background-color: #2a678f; /* Change this color to your desired color */
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.staff-case-management button.create-back-button:hover,
+.staff-case-management button.create-case-button:hover {
+  background-color: #861b48; /* Change this color to your desired hover color */
+}

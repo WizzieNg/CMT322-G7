@@ -1,0 +1,77 @@
+  /* Main content area */
+  .admin-user-content {
+    margin-top: 80px;
+    margin-left: 275px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container for tables */
+  .admin-user-table-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  /* Table styles */
+  .admin-user-content table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-user-content th, .admin-user-content td {
+    border: 1px solid #ddd;
+    width: 10px;
+    margin-left: 1000px;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .admin-user-content th {
+    background-color: #436480;
+    color: #ffffff;
+  }
+  
+  .admin-user-content tbody {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .admin-user-content tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-user-content td button {
+    background-color: #7890a0;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .admin-user-content td button:hover {
+    background-color: #774e4e;
+  }
+  
+  /* Back button */
+  .admin-user-content button {
+    background-color: #2a678f;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .admin-user-content button:hover {
+    background-color: #861b48;
+  }
