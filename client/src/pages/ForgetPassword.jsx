@@ -28,15 +28,12 @@ function ForgotPassword() {
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await axios.post('http://localhost:3001/reset-password', { email, newPassword });
       if (response.status === 200) {
         setResetPasswordSuccess(true);
         setResetPasswordError('');
-        
-        // Redirect to the login page
-        navigate('');
       }
     } catch (err) {
       setResetPasswordError('Password reset failed.');
@@ -49,40 +46,48 @@ function ForgotPassword() {
         <img src={legalForgetLogo} alt="Legal Logo" className="forgetpasswordlogo" />
       </div>
       <div className="content-container">
-        <h2 className="center-text">Enter your email address associated with your account to reset your password</h2>
         <div className="forgot-password-container">
-          {!emailConfirmed ? (
-            <form className="form-container" onSubmit={handleCheckEmail}>
-              <div>
-                <label className="forget-form-label">Enter your email:</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="input-email"
-                />
-              </div>
-              {resetPasswordError && <p className="text-danger">{resetPasswordError}</p>}
-              <button type="submit" className="forget-button-submit">Submit </button>
-            </form>
-          ) : resetPasswordSuccess ? (
-            <p>Password reset successfully! Check your email for further instructions.</p>
+          {resetPasswordSuccess ? (
+            <>
+              <p style={{ fontSize: '23px', marginBottom: '200px', marginLeft:'5px' }}>Password reset successfully! Please log in to the application.</p>
+              <button onClick={() => navigate('/')} className="forget-button-login">Login</button>
+            </>
           ) : (
-            <form className="form-container" onSubmit={handleResetPassword}>
-              <div>
-                <label className="forget-form-label">Enter your new password:</label>
-                <input
-                  type="password"
-                  value={newPassword}
-                  onChange={(e) => setNewPassword(e.target.value)}
-                  required
-                  className="input-email"
-                />
-              </div>
-              {resetPasswordError && <p className="text-danger">{resetPasswordError}</p>}
-              <button type="submit" className="forget-button-submit">Reset Password</button>
-            </form>
+            <>
+              <h2 className="center-text" style={{ fontSize: '23px', marginBottom: '250px', marginLeft:'30px' }}>Enter your email address associated with your account to reset your password:</h2>
+
+              {!emailConfirmed ? (
+                <form className="form-container" onSubmit={handleCheckEmail}>
+                  <div>
+                    <label className="forget-form-label">Enter your email:</label>
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="input-email"
+                    />
+                  </div>
+                  {resetPasswordError && <p className="text-danger">{resetPasswordError}</p>}
+                  <button type="submit" className="forget-button-submit">Submit</button>
+                </form>
+              ) : (
+                <form className="form-container" onSubmit={handleResetPassword}>
+                  <div>
+                    <label className="forget-form-label">Enter your new password:</label>
+                    <input
+                      type="password"
+                      value={newPassword}
+                      onChange={(e) => setNewPassword(e.target.value)}
+                      required
+                      className="input-email"
+                    />
+                  </div>
+                  {resetPasswordError && <p className="text-danger">{resetPasswordError}</p>}
+                  <button type="submit" className="forget-button-submit">Set New Password</button>
+                </form>
+              )}
+            </>
           )}
         </div>
       </div>
